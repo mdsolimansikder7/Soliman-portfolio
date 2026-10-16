@@ -1,0 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+import { Code2, Globe2, Layers3 } from "lucide-react";
+import { skillGroups } from "@/lib/data";
+const icons=[Code2,Layers3,Globe2];
+export default function Skills(){return <section className="section-wrap section-block" id="skills"><div className="section-kicker"><span>02 / TOOLKIT</span><i/></div><div className="section-heading-row"><div><p className="section-overline">TOOLS I REACH FOR</p><h2>A growing <span>toolkit.</span></h2></div><p className="heading-aside">A practical stack for building modern interfaces today — and understanding more of the system behind them tomorrow.</p></div><div className="skills-grid">{skillGroups.map((group,i)=>{const Icon=icons[i];return <motion.article className="skill-panel" key={group.title} initial={{opacity:0,y:18}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:i*.08}}><div className="skill-panel-head"><span className="skill-index">0{i+1}</span><span className="skill-panel-icon"><Icon size={19}/></span></div><h3>{group.title}</h3><p>{group.description}</p><div className="skill-tags">{group.skills.map(skill=><span key={skill}>{skill}</span>)}</div></motion.article>})}</div></section>}
