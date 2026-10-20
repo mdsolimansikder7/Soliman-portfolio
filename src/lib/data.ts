@@ -73,6 +73,7 @@ export type Project = {
   featured: string;
 };
 
+
 export const projects: Project[] = [
   {
     slug: "su-calendar-sync",
@@ -86,17 +87,10 @@ export const projects: Project[] = [
     description:
       "SU Calendar Sync is designed to make academic schedules easier to manage. Students can work with class routine information and use calendar integrations to keep important dates accessible across their devices.",
 
-    stack: [
-      "JavaScript",
-      "React",
-      "Web APIs",
-      "CSS",
-    ],
+    stack: ["JavaScript", "React", "Web APIs", "CSS"],
 
-    // Keep your screenshot in public/images/screenshot-home.png
     image: "/images/screenshot-home.png",
 
-    // Replace this with your verified deployed website URL if different.
     liveUrl: "https://sucalendersync.vercel.app/",
 
     repoUrl:
@@ -127,15 +121,10 @@ export const projects: Project[] = [
     description:
       "Boss Lab — JS Console is a browser-based project designed to make JavaScript practice more approachable. It provides a focused space to experiment with snippets and explore JavaScript concepts.",
 
-    stack: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
+    stack: ["HTML", "CSS", "JavaScript"],
 
     image: "/images/Js console.png",
 
-    // Verify this deployment URL if your live demo uses another address.
     liveUrl: "https://boss-lab-js-console.vercel.app/",
 
     repoUrl:
@@ -178,7 +167,6 @@ export const projects: Project[] = [
 
     liveUrl: "https://newsorbit-nu.vercel.app/",
 
-    // Replace with the exact News Orbit repository URL if available.
     repoUrl: "https://github.com/mdsolimansikder7",
 
     challenges: [
@@ -191,6 +179,51 @@ export const projects: Project[] = [
       "Add search, bookmarks, and personalized topics.",
       "Improve accessibility and automated tests.",
       "Add richer article metadata and sharing actions.",
+    ],
+  },
+
+  {
+    slug: "medical-management",
+    name: "Medical Management",
+    category: "Healthcare Management System",
+    featured: "Hospital Management Dashboard",
+
+    summary:
+      "A modern healthcare management dashboard for organizing patients, doctors, appointments, and hospital operations.",
+
+    description:
+      "Medical Management (MediCare) is a responsive hospital management dashboard designed to simplify healthcare administration. It provides dedicated interfaces for managing appointments, patients, doctors, consultations, laboratory workflows, pharmacy inventory, medical records, billing, reports, and staff. The application includes authentication interfaces, interactive charts, and light and dark themes.",
+
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Recharts",
+      "Lucide React",
+    ],
+
+    image: "/images/medical-mang.png",
+
+    liveUrl: "https://medical-managment-seven.vercel.app/",
+
+    repoUrl:
+      "https://github.com/mdsolimansikder7/Medical-managment",
+
+    challenges: [
+      "Organizing multiple hospital management modules into a consistent dashboard.",
+      "Building reusable and responsive UI components for healthcare workflows.",
+      "Presenting dashboard statistics through interactive charts.",
+      "Designing clear navigation for different management modules.",
+    ],
+
+    improvements: [
+      "Integrate a secure backend and database for persistent medical records.",
+      "Implement production-ready authentication and role-based authorization.",
+      "Add real-time appointment scheduling and notifications.",
+      "Strengthen patient data security and access controls.",
+      "Add automated tests and improve accessibility.",
     ],
   },
 ];
