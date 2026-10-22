@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -12,10 +11,7 @@ export default function Projects() {
   const totalProjects = String(projects.length).padStart(2, "0");
 
   return (
-    <section
-      className="section-wrap section-block"
-      id="projects"
-    >
+    <section className="section-wrap section-block" id="projects">
       <div className="section-kicker">
         <span>04 / SELECTED WORK</span>
         <i />
@@ -23,9 +19,7 @@ export default function Projects() {
 
       <div className="section-heading-row">
         <div>
-          <p className="section-overline">
-            A FEW THINGS I&apos;VE BUILT
-          </p>
+          <p className="section-overline">A FEW THINGS I&apos;VE BUILT</p>
           <h2>
             Made with <span>intention.</span>
           </h2>
@@ -77,7 +71,6 @@ export default function Projects() {
             <div className="project-card-body">
               <div className="project-meta">
                 <span>{project.category}</span>
-
                 <span className="project-featured">
                   <Sparkles size={12} /> {project.featured}
                 </span>
@@ -124,11 +117,7 @@ export default function Projects() {
         <span>MORE IDEAS ARE IN THE WORKS</span>
         <span className="bottom-spark">✳</span>
 
-        <a
-          href={profile.github}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={profile.github} target="_blank" rel="noreferrer">
           Explore my GitHub <ArrowUpRight size={15} />
         </a>
       </div>

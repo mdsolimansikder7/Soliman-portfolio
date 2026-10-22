@@ -89,7 +89,7 @@ export const projects: Project[] = [
 
     stack: ["JavaScript", "React", "Web APIs", "CSS"],
 
-    image: "/images/screenshot-home.png",
+    image: "/images/screenshot-home.webp",
 
     liveUrl: "https://sucalendersync.vercel.app/",
 
@@ -109,39 +109,54 @@ export const projects: Project[] = [
     ],
   },
 
-  {
-    slug: "boss-lab-js-console",
-    name: "Boss Lab — JS Console",
-    category: "JavaScript Utility",
-    featured: "Interactive Learning",
+ {
+  slug: "boss-lab-console",
+  name: "Boss Lab — Multi-language Code Console",
+  category: "Developer Tool",
+  featured: "Interactive Coding & Learning",
 
-    summary:
-      "An interactive JavaScript console for experimenting with code and practicing core language concepts.",
+  summary:
+    "A browser-based multi-language code playground for writing, running, and experimenting with JavaScript, Python, C, and C++.",
 
-    description:
-      "Boss Lab — JS Console is a browser-based project designed to make JavaScript practice more approachable. It provides a focused space to experiment with snippets and explore JavaScript concepts.",
+  description:
+    "Boss Lab is an interactive coding environment built to make programming practice easier and more accessible. It features a Monaco-powered code editor, a smart console for displaying output and errors, multi-language execution, reusable code snippets, customizable editor settings, theme options, and shareable code links. The application is designed with a responsive interface for both desktop and mobile users.",
 
-    stack: ["HTML", "CSS", "JavaScript"],
+  stack: [
+    "React 19",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS v4",
+    "Monaco Editor",
+    "Lucide React",
+    "Motion",
+    "Vercel"
+  ],
 
-    image: "/images/Js console.png",
+  image: "/images/boss-console.webp",
 
-    liveUrl: "https://boss-lab-js-console.vercel.app/",
+  liveUrl: "https://boss-lab-console.vercel.app/",
 
-    repoUrl:
-      "https://github.com/mdsolimansikder7/Boss-Lab--JS-Console",
+  repoUrl:
+    "https://github.com/mdsolimansikder7/Boss-Lab-Console",
 
-    challenges: [
-      "Designing a console-like interface that remains approachable for learners.",
-      "Presenting input and output in a readable format.",
-      "Keeping interactions usable on desktop and mobile screens.",
-    ],
+  challenges: [
+    "Building a responsive coding workspace with an editor and console.",
+    "Supporting multiple programming languages through a unified interface.",
+    "Integrating remote compilation for Python, C, and C++ while keeping JavaScript execution in the browser.",
+    "Displaying program output, compiler errors, execution status, and timing clearly.",
+    "Managing editor preferences, saved code, themes, and reusable snippets.",
+    "Making the coding experience accessible across desktop and mobile layouts."
+  ],
 
-    improvements: [
-      "Add more guided JavaScript examples.",
-      "Improve output formatting and error explanations.",
-      "Add beginner-friendly JavaScript practice challenges.",
-    ],
-  },
+  improvements: [
+    "Add more beginner-friendly coding examples and guided exercises.",
+    "Expand the snippets library with algorithms and data structure examples.",
+    "Improve compiler error explanations and debugging assistance.",
+    "Add code formatting and more editor customization options.",
+    "Introduce coding challenges with test cases and expected outputs.",
+    "Explore additional programming language support."
+  ],
+},
 
   {
     slug: "news-orbit",
@@ -163,7 +178,7 @@ export const projects: Project[] = [
       "REST API",
     ],
 
-    image: "/images/news-orbit.png",
+    image: "/images/news-orbit.webp",
 
     liveUrl: "https://newsorbit-nu.vercel.app/",
 
@@ -204,7 +219,7 @@ export const projects: Project[] = [
       "Lucide React",
     ],
 
-    image: "/images/medical-mang.png",
+    image: "/images/medical-mang.webp",
 
     liveUrl: "https://medical-managment-seven.vercel.app/",
 
