@@ -49,24 +49,19 @@ export default function Contact() {
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
       const result = await response.json();
 
       if (!response.ok) {
-        throw new Error(
-          result.error || "Message could not be sent."
-        );
+        throw new Error(result.error || "Message could not be sent.");
       }
 
       setStatus({
         type: "success",
-        message:
-          "Message sent successfully! Thank you for reaching out.",
+        message: "Message sent successfully! Thank you for reaching out.",
       });
 
       form.reset();
@@ -93,6 +88,11 @@ export default function Contact() {
       preventScroll: true,
     });
   }
+
+  // Open Gmail in the browser instead of invoking a mail application.
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+    profile.email
+  )}`;
 
   return (
     <>
@@ -122,10 +122,7 @@ export default function Contact() {
         </div>
       </section>
 
-      <section
-        className="section-wrap section-block"
-        id="contact"
-      >
+      <section className="section-wrap section-block" id="contact">
         <div className="section-kicker">
           <span>05 / SAY HELLO</span>
           <i />
@@ -150,7 +147,9 @@ export default function Contact() {
 
             <div className="contact-methods">
               <a
-                href={`mailto:${profile.email}`}
+                href={gmailUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="contact-method"
               >
                 <span className="contact-method-icon">
@@ -169,7 +168,7 @@ export default function Contact() {
                 <a
                   href={`https://wa.me/${profile.phone.replace(/\D/g, "")}`}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="contact-method"
                 >
                   <span className="contact-method-icon">
@@ -188,7 +187,7 @@ export default function Contact() {
               <a
                 href={profile.linkedin}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="contact-method"
               >
                 <span className="contact-method-icon">
@@ -206,7 +205,7 @@ export default function Contact() {
               <a
                 href={profile.github}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="contact-method"
               >
                 <span className="contact-method-icon">
@@ -233,9 +232,7 @@ export default function Contact() {
           >
             <div className="form-heading">
               <span>01 — YOUR DETAILS</span>
-              <span className="form-required">
-                * REQUIRED
-              </span>
+              <span className="form-required">* REQUIRED</span>
             </div>
 
             <label htmlFor="name">
@@ -298,12 +295,8 @@ export default function Contact() {
                 }
               >
                 {status.type === "success" && (
-                  <CheckCircle2
-                    size={16}
-                    className="mr-2 inline"
-                  />
+                  <CheckCircle2 size={16} className="mr-2 inline" />
                 )}
-
                 {status.message}
               </p>
             )}
