@@ -1,6 +1,6 @@
 export const profile = {
   name: "Md. Soliman Sikder",
-  role: "Frontend Developer",
+  role: "Full Stack Developer",
   location: "Dhaka, Bangladesh",
   github: "https://github.com/mdsolimansikder7",
   linkedin: "https://www.linkedin.com/in/mdsolimansikder7",
@@ -240,5 +240,55 @@ export const projects: Project[] = [
       "Strengthen patient data security and access controls.",
       "Add automated tests and improve accessibility.",
     ],
+    
   },
+  {
+  slug: "chatly",
+  name: "Chatly",
+  category: "Real-Time Messaging Platform",
+  featured: "Full-Stack Chat Application",
+
+  summary:
+    "A modern messaging platform for real-time conversations, friend connections, and interactive communication.",
+
+  description:
+    "Chatly is a full-stack messaging application designed to provide a smooth and interactive communication experience. The frontend is built with React and Vite, while the backend uses Node.js, Express, and MongoDB. The application integrates Socket.IO for real-time messaging and communication events, Better Auth for authentication support, and REST APIs for application features. Its modular architecture separates the frontend, backend, authentication, conversations, messages, and user management.",
+
+  stack: [
+    "React",
+    "Vite",
+    "React Router",
+    "Tailwind CSS",
+    "Axios",
+    "Socket.IO",
+    "Better Auth",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+  ],
+
+  image: "/images/chatly.webp",
+
+  liveUrl: "https://chatly-message.vercel.app/",
+
+  repoUrl:
+    "https://github.com/mdsolimansikder7/Chatly-message",
+
+  challenges: [
+    "Integrating real-time messaging with the frontend and backend.",
+    "Organizing authentication, users, conversations, and messages into modular components.",
+    "Managing client-server communication through REST APIs and Socket.IO.",
+    "Building a responsive and interactive messaging interface.",
+    "Configuring frontend and backend communication across deployed environments.",
+  ],
+
+  improvements: [
+    "Improve message delivery reliability and reconnection handling.",
+    "Add message search, pagination, and advanced conversation management.",
+    "Strengthen authentication, authorization, and API security.",
+    "Improve deployment configuration for persistent real-time connections.",
+    "Add automated tests, accessibility improvements, and performance monitoring.",
+  ],
+},
 ];

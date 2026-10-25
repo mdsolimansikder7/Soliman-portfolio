@@ -110,7 +110,7 @@ To deploy your own version:
 
 ## 👨‍💻 About Me
 
-I'm **Md. Soliman Sikder**, a Computer Science and Engineering undergraduate at Sonargaon University and an aspiring Frontend Developer based in Dhaka, Bangladesh.
+I'm **Md. Soliman Sikder**, a Computer Science and Engineering undergraduate at Sonargaon University and an aspiring Full Stack Developer based in Dhaka, Bangladesh.
 
 I enjoy building modern web applications and continuously improving my development skills.
 

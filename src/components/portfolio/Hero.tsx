@@ -48,7 +48,7 @@ export default function Hero() {
         >
           <div className="eyebrow status-pill">
             <span className="status-dot" />
-            FRONTEND DEVELOPER
+            FULL STACK DEVELOPER
             <span className="pill-divider" />
             OPEN TO OPPORTUNITIES
           </div>
@@ -63,7 +63,7 @@ export default function Hero() {
 
           <p className="hero-description">
             Hey, I&apos;m <strong>{profile.name}</strong> — a
-            frontend developer who turns ideas into clear,
+            full stack developer who turns ideas into clear,
             thoughtful, and engaging web experiences.
           </p>
 

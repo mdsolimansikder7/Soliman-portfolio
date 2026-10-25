@@ -120,7 +120,7 @@ export default function Journey() {
           <p>
             Exploring modern web technologies, developing
             real-world projects, and strengthening my skills
-            in frontend and full-stack development.
+            in full-stack development.
           </p>
 
           <div className="note-footer">
