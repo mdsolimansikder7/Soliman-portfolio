@@ -243,52 +243,56 @@ export const projects: Project[] = [
     
   },
   {
-  slug: "chatly",
-  name: "Chatly",
-  category: "Real-Time Messaging Platform",
-  featured: "Full-Stack Chat Application",
+  slug: "krishi-bondu",
+  name: "Krishi-Bondu",
+  category: "Agriculture Technology Platform",
+  featured: "Full-Stack Digital Agriculture Assistant",
 
   summary:
-    "A modern messaging platform for real-time conversations, friend connections, and interactive communication.",
+    "A Bengali-first digital agriculture platform that helps farmers access weather updates, crop market prices, farming guides, AI-assisted disease analysis, and essential agricultural tools.",
 
   description:
-    "Chatly is a full-stack messaging application designed to provide a smooth and interactive communication experience. The frontend is built with React and Vite, while the backend uses Node.js, Express, and MongoDB. The application integrates Socket.IO for real-time messaging and communication events, Better Auth for authentication support, and REST APIs for application features. Its modular architecture separates the frontend, backend, authentication, conversations, messages, and user management.",
+    "Krishi-Bondu is a full-stack digital agriculture platform designed to make farming information and tools more accessible to farmers in Bangladesh. Built with React, TypeScript, Vite, Node.js, Express, and MongoDB, the application brings together weather forecasts, crop market prices, cultivation guides, AI-assisted disease analysis, an agricultural calendar, farm expense tracking, a marketplace, and a farming Q&A system. It integrates Better Auth for authentication, Open-Meteo for weather data, and the Google Gemini API for optional AI-powered features. Its modular architecture separates frontend components, backend APIs, shared business logic, and authentication to support maintainability and deployment.",
 
   stack: [
-    "React",
+    "React 19",
+    "TypeScript",
     "Vite",
-    "React Router",
     "Tailwind CSS",
-    "Axios",
-    "Socket.IO",
-    "Better Auth",
+    "Lucide React",
+    "Motion",
     "Node.js",
     "Express.js",
     "MongoDB",
-    "Mongoose",
+    "Better Auth",
+    "Google Gemini API",
+    "Open-Meteo API",
+    "Vercel",
   ],
 
-  image: "/images/chatly.webp",
+  image: "/images/krishi-bondu.webp",
 
-  liveUrl: "https://chatly-message.vercel.app/",
+  liveUrl: "https://krishi-bondu.vercel.app/",
 
   repoUrl:
-    "https://github.com/mdsolimansikder7/Chatly-message",
+    "https://github.com/mdsolimansikder7/Krishi-Bondu",
 
   challenges: [
-    "Integrating real-time messaging with the frontend and backend.",
-    "Organizing authentication, users, conversations, and messages into modular components.",
-    "Managing client-server communication through REST APIs and Socket.IO.",
-    "Building a responsive and interactive messaging interface.",
-    "Configuring frontend and backend communication across deployed environments.",
+    "Integrating weather information, agricultural data, and AI-assisted features into a unified platform.",
+    "Designing a modular monorepo structure for the frontend, backend, and shared business logic.",
+    "Implementing authentication and coordinating secure communication between the frontend and backend APIs.",
+    "Building farmer-focused tools for market prices, crop guidance, farm management, and agricultural calculations.",
+    "Configuring Vercel deployment, API routing, environment variables, and database connectivity.",
   ],
 
   improvements: [
-    "Improve message delivery reliability and reconnection handling.",
-    "Add message search, pagination, and advanced conversation management.",
-    "Strengthen authentication, authorization, and API security.",
-    "Improve deployment configuration for persistent real-time connections.",
-    "Add automated tests, accessibility improvements, and performance monitoring.",
+    "Integrate verified agricultural market data sources for more reliable and up-to-date crop prices.",
+    "Improve AI-assisted crop disease analysis with reliable agricultural datasets and expert-reviewed guidance.",
+    "Add advanced farm analytics, expense reports, and crop profitability calculations.",
+    "Expand the agricultural marketplace with secure transactions and improved seller management.",
+    "Strengthen automated testing, accessibility, API security, and application performance monitoring.",
   ],
 },
+
+  
 ];
