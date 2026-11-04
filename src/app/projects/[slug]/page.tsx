@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -110,19 +109,22 @@ export default async function ProjectDetails({
         {/* Project Action Buttons */}
 
         <div className="detail-actions">
-          {project.liveUrl && (
+
+          {/* Live Project - Other Projects Only */}
+
+          {!isExtension && project.liveUrl && (
             <a
               className="button-primary"
               href={project.liveUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               View live project
               <ExternalLink size={16} />
             </a>
           )}
 
-          {/* Marketplace Button - Extension Only */}
+          {/* Marketplace - Extension Only */}
 
           {isExtension && (
             <a
@@ -136,17 +138,20 @@ export default async function ProjectDetails({
             </a>
           )}
 
+          {/* GitHub Repository */}
+
           {project.repoUrl && (
             <a
               className="button-secondary"
               href={project.repoUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               GitHub repository
               <ArrowUpRight size={16} />
             </a>
           )}
+
         </div>
 
         {/* Project Details */}
@@ -171,7 +176,9 @@ export default async function ProjectDetails({
 
             <div className="skill-tags detail-tags">
               {project.stack.map((item) => (
-                <span key={item}>{item}</span>
+                <span key={item}>
+                  {item}
+                </span>
               ))}
             </div>
           </section>
