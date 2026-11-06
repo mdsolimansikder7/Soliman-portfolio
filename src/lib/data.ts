@@ -6,7 +6,7 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/mdsolimansikder7",
   email: "mdsolimansikder62@gmail.com",
   phone: "+8801791445773",
-  resumePath: "/cv/SolimanCv.pdf",
+  resumePath: "/resume/Md_Soliman_Sikder_Resume.pdf",
   photo: "/images/profile.png",
 };
 
