@@ -122,6 +122,7 @@ export const projects: Project[] = [
     "Add more advanced Git operations and customization options.",
   ],
   
+},
 {
   slug: "nextjs-project-creator",
   name: "Next.js One-Click Project Creator",
