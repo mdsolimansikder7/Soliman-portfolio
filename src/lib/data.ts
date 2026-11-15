@@ -126,6 +126,56 @@ export const projects: Project[] = [
       "Add multi-language and multi-currency support.",
     ],
   },
+    {
+    slug: "humanova",
+    name: "Humanova",
+    category: "Community Platform",
+    featured: "Community Event Platform",
+
+    summary:
+      "A community event platform that helps people discover, create and join local social-service activities, connecting volunteers and organizers.",
+
+    description:
+      "Humanova is a community-focused event platform for discovering, creating and participating in local social-service activities. Visitors can browse upcoming events, search by keyword and filter by category, while authenticated users can create, update and delete their own events, join events, and track the events they created or joined from a personal dashboard. The app supports email/password and Google sign-in through Better Auth, JWT-protected API requests, a user profile page, light and dark themes, toast notifications and confirmation dialogs. Built with Next.js 16, React 19 and Tailwind CSS 4, it is fully responsive across desktop and mobile.",
+
+    stack: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "shadcn/ui",
+      "Base UI",
+      "Better Auth",
+      "MongoDB",
+      "JWT",
+      "Google OAuth",
+      "Vercel",
+    ],
+
+    image: "/images/humanova.webp",
+
+    liveUrl: "https://humanova7.vercel.app/",
+
+    repoUrl: "https://github.com/mdsolimansikder7/Humanova",
+
+    challenges: [
+      "Building event creation, update and delete flows with ownership checks.",
+      "Implementing email/password and Google authentication with Better Auth.",
+      "Protecting API requests with JWT bearer tokens.",
+      "Tracking joined events and showing the correct joining status for each user.",
+      "Building search and category filters for browsing events.",
+      "Keeping the interface responsive and consistent across light and dark themes.",
+    ],
+
+    improvements: [
+      "Add event reminders and email notifications.",
+      "Add maps and location-based event discovery.",
+      "Introduce volunteer profiles, badges and activity history.",
+      "Add comments and event photo galleries.",
+      "Improve accessibility and add automated tests.",
+      "Add an admin panel for moderating events and users.",
+    ],
+  },
 
   {
     slug: "git-folder-manager",
