@@ -73,159 +73,157 @@ export type Project = {
   featured: string;
 };
 
+export const projects: Project[] = [
+  {
+    slug: "zayro-cloth",
+    name: "Zayro",
+    category: "E-commerce",
+    featured: "Full-Stack Web App",
 
-export const projects: Project[] ={
-  slug: "zayro-cloth",
-  name: "Zayro",
-  category: "E-commerce",
-  featured: "Full-Stack Web App",
+    summary:
+      "A modern, mobile-first online clothing store with powerful filters, sorting, wishlist, cart and dark mode, built with Next.js, Express.js and MongoDB.",
 
-  summary:
-    "A modern, mobile-first online clothing store with powerful filters, sorting, wishlist, cart and dark mode, built with Next.js, Express.js and MongoDB.",
+    description:
+      "Zayro is a full-stack e-commerce platform for fashion shopping. Customers can browse products by category, filter by price, color, size and style, sort by popularity, newest or price, and view detailed product pages with image galleries, ratings and reviews. The app includes a wishlist, shopping cart, product search and light and dark themes. The frontend is built with Next.js and Tailwind CSS, while a Node.js and Express.js REST API with MongoDB powers products, categories and store data, and Cloudflare R2 stores product images. It is designed mobile-first, with a slide-in filters drawer, clean one-line breadcrumbs, equal-height product cards and branded 404 and error pages for a smooth experience on every screen size.",
 
-  description:
-    "Zayro is a full-stack e-commerce platform for fashion shopping. Customers can browse products by category, filter by price, color, size and style, sort by popularity, newest or price, and view detailed product pages with image galleries, ratings and reviews. The app includes a wishlist, shopping cart, product search and light and dark themes. The frontend is built with Next.js and Tailwind CSS, while a Node.js and Express.js REST API with MongoDB powers products, categories and store data, and Cloudflare R2 stores product images. It is designed mobile-first, with a slide-in filters drawer, clean one-line breadcrumbs, equal-height product cards and branded 404 and error pages for a smooth experience on every screen size.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Cloudflare R2",
+      "REST API",
+      "Vercel",
+    ],
 
-  stack: [
-    "Next.js",
-    "TypeScript",
-    "React",
-    "Tailwind CSS",
-    "shadcn/ui",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Mongoose",
-    "Cloudflare R2",
-    "REST API",
-    "Vercel",
-  ],
+    image: "/images/zayro-cloth.webp",
 
-  image: "/images/zayro-cloth.webp",
+    liveUrl: "https://zayro-cloth.vercel.app",
 
-  liveUrl: "https://zayro-cloth.vercel.app",
+    repoUrl: "https://github.com/mdsolimansikder7/zayro-cloth-client",
 
-  repoUrl: "https://github.com/mdsolimansikder7/zayro-cloth-client",
+    challenges: [
+      "Designing a mobile-friendly filters drawer for category, price, color, size and style.",
+      "Keeping product cards, prices and discount badges aligned across different screen sizes.",
+      "Building a reusable breadcrumb that stays on one line, even with long product names.",
+      "Building a REST API with Express.js and MongoDB for products, filters and sorting.",
+      "Connecting the frontend to the API through a proxy to avoid cross-domain cookie issues.",
+      "Deploying the Express.js API and Next.js frontend as separate Vercel projects.",
+      "Supporting light and dark mode consistently across every page.",
+    ],
 
-  challenges: [
-    "Designing a mobile-friendly filters drawer for category, price, color, size and style.",
-    "Keeping product cards, prices and discount badges aligned across different screen sizes.",
-    "Building a reusable breadcrumb that stays on one line, even with long product names.",
-    "Building a REST API with Express.js and MongoDB for products, filters and sorting.",
-    "Connecting the frontend to the API through a proxy to avoid cross-domain cookie issues.",
-    "Deploying the Express.js API and Next.js frontend as separate Vercel projects.",
-    "Supporting light and dark mode consistently across every page.",
-  ],
-
-  improvements: [
-    "Add secure online payment and checkout integration.",
-    "Add order tracking and order history for customers.",
-    "Improve search with suggestions and typo tolerance.",
-    "Add API caching and rate limiting for better performance and security.",
-    "Add product recommendations and recently viewed items.",
-    "Add multi-language and multi-currency support.",
-  ]
-},
+    improvements: [
+      "Add secure online payment and checkout integration.",
+      "Add order tracking and order history for customers.",
+      "Improve search with suggestions and typo tolerance.",
+      "Add API caching and rate limiting for better performance and security.",
+      "Add product recommendations and recently viewed items.",
+      "Add multi-language and multi-currency support.",
+    ],
+  },
 
   {
-    [
-  slug: "git-folder-manager",
-  name: "Git Folder Manager",
-  category: "Developer Tool",
-  featured: "VS Code Extension",
+    slug: "git-folder-manager",
+    name: "Git Folder Manager",
+    category: "Developer Tool",
+    featured: "VS Code Extension",
 
-  summary:
-    "A VS Code extension that simplifies GitHub folder and individual file push workflows with flexible commit and permission controls.",
+    summary:
+      "A VS Code extension that simplifies GitHub folder and individual file push workflows with flexible commit and permission controls.",
 
-  description:
-    "Git Folder Manager is a Visual Studio Code extension designed to make GitHub workflows more flexible and convenient. It allows developers to select and push entire folders or individual files to GitHub directly from VS Code. The extension provides a commit message dialog before pushing changes, permission confirmation for GitHub operations, and a Don't Ask Again option to remember user preferences. Its goal is to simplify file management and give developers more control over their GitHub push workflow.",
+    description:
+      "Git Folder Manager is a Visual Studio Code extension designed to make GitHub workflows more flexible and convenient. It allows developers to select and push entire folders or individual files to GitHub directly from VS Code. The extension provides a commit message dialog before pushing changes, permission confirmation for GitHub operations, and a Don't Ask Again option to remember user preferences. Its goal is to simplify file management and give developers more control over their GitHub push workflow.",
 
-  stack: [
-    "TypeScript",
-    "Node.js",
-    "VS Code Extension API",
-    "Git",
-    "GitHub API",
-    "GitHub REST API",
-  ],
+    stack: [
+      "TypeScript",
+      "Node.js",
+      "VS Code Extension API",
+      "Git",
+      "GitHub API",
+      "GitHub REST API",
+    ],
 
-  image: "/images/git-folder-manager.webp",
+    image: "/images/git-folder-manager.webp",
 
-  liveUrl:
-    "https://marketplace.visualstudio.com/items?itemName=mdsolimansikder07.git-folder-manage",
+    liveUrl:
+      "https://marketplace.visualstudio.com/items?itemName=mdsolimansikder07.git-folder-manage",
 
-  repoUrl:
-    "https://github.com/mdsolimansikder7/Git-Folder-Manager",
+    repoUrl: "https://github.com/mdsolimansikder7/Git-Folder-Manager",
 
-  challenges: [
-    "Implementing folder-based GitHub push functionality inside VS Code.",
-    "Supporting individual file selection and push operations.",
-    "Designing a flexible workflow for managing Git commits.",
-    "Implementing permission confirmation before pushing changes.",
-    "Managing user preferences through a Don't Ask Again option.",
-    "Providing a simple and intuitive extension interface.",
-  ],
+    challenges: [
+      "Implementing folder-based GitHub push functionality inside VS Code.",
+      "Supporting individual file selection and push operations.",
+      "Designing a flexible workflow for managing Git commits.",
+      "Implementing permission confirmation before pushing changes.",
+      "Managing user preferences through a Don't Ask Again option.",
+      "Providing a simple and intuitive extension interface.",
+    ],
 
-  improvements: [
-    "Add support for multiple GitHub repositories.",
-    "Improve folder and file selection workflows.",
-    "Add branch selection before pushing changes.",
-    "Introduce push history and commit tracking.",
-    "Improve error handling and network failure recovery.",
-    "Add more advanced Git operations and customization options.",
-  ],
-  
-},
-{
-  slug: "nextjs-project-creator",
-  name: "Next.js One-Click Project Creator",
-  category: "Developer Tool",
-  featured: "VS Code Extension",
+    improvements: [
+      "Add support for multiple GitHub repositories.",
+      "Improve folder and file selection workflows.",
+      "Add branch selection before pushing changes.",
+      "Introduce push history and commit tracking.",
+      "Improve error handling and network failure recovery.",
+      "Add more advanced Git operations and customization options.",
+    ],
+  },
 
-  summary:
-    "A VS Code extension that simplifies Next.js project creation with customizable configuration options and one-click project setup.",
+  {
+    slug: "nextjs-project-creator",
+    name: "Next.js One-Click Project Creator",
+    category: "Developer Tool",
+    featured: "VS Code Extension",
 
-  description:
-    "Next.js One-Click Project Creator is a Visual Studio Code extension designed to make Next.js project setup faster and more convenient. It allows developers to create new Next.js applications directly from VS Code using an intuitive sidebar form or status bar command. The extension provides flexible configuration options, including TypeScript or JavaScript, ESLint, Biome, Tailwind CSS, React Compiler, App Router, Turbopack, and package manager selection. It also supports custom import aliases, project directory selection, saved default configurations, and automatic project opening. By integrating create-next-app into VS Code, the extension eliminates repetitive setup prompts and streamlines the development workflow.",
+    summary:
+      "A VS Code extension that simplifies Next.js project creation with customizable configuration options and one-click project setup.",
 
-  stack: [
-    "TypeScript",
-    "Node.js",
-    "VS Code Extension API",
-    "Next.js",
-    "React",
-    "create-next-app",
-    "npm",
-  ],
+    description:
+      "Next.js One-Click Project Creator is a Visual Studio Code extension designed to make Next.js project setup faster and more convenient. It allows developers to create new Next.js applications directly from VS Code using an intuitive sidebar form or status bar command. The extension provides flexible configuration options, including TypeScript or JavaScript, ESLint, Biome, Tailwind CSS, React Compiler, App Router, Turbopack, and package manager selection. It also supports custom import aliases, project directory selection, saved default configurations, and automatic project opening. By integrating create-next-app into VS Code, the extension eliminates repetitive setup prompts and streamlines the development workflow.",
 
-  image: "/images/nextjs-project-creator.webp",
+    stack: [
+      "TypeScript",
+      "Node.js",
+      "VS Code Extension API",
+      "Next.js",
+      "React",
+      "create-next-app",
+      "npm",
+    ],
 
-  liveUrl:
-    "https://marketplace.visualstudio.com/items?itemName=mdsolimansikder07.nextjs-project-creator",
+    image: "/images/nextjs-project-creator.webp",
 
-  repoUrl:
-    "https://github.com/mdsolimansikder7/Next-Js-project-Creator",
+    liveUrl:
+      "https://marketplace.visualstudio.com/items?itemName=mdsolimansikder07.nextjs-project-creator",
 
-  challenges: [
-    "Integrating create-next-app with the VS Code extension workflow.",
-    "Designing a user-friendly interface for Next.js project configuration.",
-    "Supporting multiple programming languages and package managers.",
-    "Managing various Next.js setup options and command-line flags.",
-    "Implementing project directory selection and automatic project opening.",
-    "Providing real-time command output and error feedback.",
-    "Saving user preferences for faster project creation.",
-  ],
+    repoUrl: "https://github.com/mdsolimansikder7/Next-Js-project-Creator",
 
-  improvements: [
-    "Add support for custom Next.js project templates.",
-    "Introduce pre-configured project starter presets.",
-    "Add support for popular UI libraries and integrations.",
-    "Improve project creation progress tracking.",
-    "Add advanced configuration options for Next.js projects.",
-    "Enhance error handling and project setup recovery.",
-    "Introduce reusable configuration profiles.",
-  ],
-},
+    challenges: [
+      "Integrating create-next-app with the VS Code extension workflow.",
+      "Designing a user-friendly interface for Next.js project configuration.",
+      "Supporting multiple programming languages and package managers.",
+      "Managing various Next.js setup options and command-line flags.",
+      "Implementing project directory selection and automatic project opening.",
+      "Providing real-time command output and error feedback.",
+      "Saving user preferences for faster project creation.",
+    ],
+
+    improvements: [
+      "Add support for custom Next.js project templates.",
+      "Introduce pre-configured project starter presets.",
+      "Add support for popular UI libraries and integrations.",
+      "Improve project creation progress tracking.",
+      "Add advanced configuration options for Next.js projects.",
+      "Enhance error handling and project setup recovery.",
+      "Introduce reusable configuration profiles.",
+    ],
+  },
+
   {
     slug: "su-calendar-sync",
     name: "SU Calendar Sync",
@@ -244,8 +242,7 @@ export const projects: Project[] ={
 
     liveUrl: "https://sucalendersync.vercel.app/",
 
-    repoUrl:
-      "https://github.com/mdsolimansikder7/SU-Calender-Sync",
+    repoUrl: "https://github.com/mdsolimansikder7/SU-Calender-Sync",
 
     challenges: [
       "Representing academic dates and class events consistently.",
@@ -260,54 +257,53 @@ export const projects: Project[] ={
     ],
   },
 
- {
-  slug: "boss-lab-console",
-  name: "Boss Lab — Multi-language Code Console",
-  category: "Developer Tool",
-  featured: "Interactive Coding & Learning",
+  {
+    slug: "boss-lab-console",
+    name: "Boss Lab — Multi-language Code Console",
+    category: "Developer Tool",
+    featured: "Interactive Coding & Learning",
 
-  summary:
-    "A browser-based multi-language code playground for writing, running, and experimenting with JavaScript, Python, C, and C++.",
+    summary:
+      "A browser-based multi-language code playground for writing, running, and experimenting with JavaScript, Python, C, and C++.",
 
-  description:
-    "Boss Lab is an interactive coding environment built to make programming practice easier and more accessible. It features a Monaco-powered code editor, a smart console for displaying output and errors, multi-language execution, reusable code snippets, customizable editor settings, theme options, and shareable code links. The application is designed with a responsive interface for both desktop and mobile users.",
+    description:
+      "Boss Lab is an interactive coding environment built to make programming practice easier and more accessible. It features a Monaco-powered code editor, a smart console for displaying output and errors, multi-language execution, reusable code snippets, customizable editor settings, theme options, and shareable code links. The application is designed with a responsive interface for both desktop and mobile users.",
 
-  stack: [
-    "React 19",
-    "TypeScript",
-    "Vite",
-    "Tailwind CSS v4",
-    "Monaco Editor",
-    "Lucide React",
-    "Motion",
-    "Vercel"
-  ],
+    stack: [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS v4",
+      "Monaco Editor",
+      "Lucide React",
+      "Motion",
+      "Vercel",
+    ],
 
-  image: "/images/boss-console.webp",
+    image: "/images/boss-console.webp",
 
-  liveUrl: "https://boss-lab-console.vercel.app/",
+    liveUrl: "https://boss-lab-console.vercel.app/",
 
-  repoUrl:
-    "https://github.com/mdsolimansikder7/Boss-Lab-Console",
+    repoUrl: "https://github.com/mdsolimansikder7/Boss-Lab-Console",
 
-  challenges: [
-    "Building a responsive coding workspace with an editor and console.",
-    "Supporting multiple programming languages through a unified interface.",
-    "Integrating remote compilation for Python, C, and C++ while keeping JavaScript execution in the browser.",
-    "Displaying program output, compiler errors, execution status, and timing clearly.",
-    "Managing editor preferences, saved code, themes, and reusable snippets.",
-    "Making the coding experience accessible across desktop and mobile layouts."
-  ],
+    challenges: [
+      "Building a responsive coding workspace with an editor and console.",
+      "Supporting multiple programming languages through a unified interface.",
+      "Integrating remote compilation for Python, C, and C++ while keeping JavaScript execution in the browser.",
+      "Displaying program output, compiler errors, execution status, and timing clearly.",
+      "Managing editor preferences, saved code, themes, and reusable snippets.",
+      "Making the coding experience accessible across desktop and mobile layouts.",
+    ],
 
-  improvements: [
-    "Add more beginner-friendly coding examples and guided exercises.",
-    "Expand the snippets library with algorithms and data structure examples.",
-    "Improve compiler error explanations and debugging assistance.",
-    "Add code formatting and more editor customization options.",
-    "Introduce coding challenges with test cases and expected outputs.",
-    "Explore additional programming language support."
-  ],
-},
+    improvements: [
+      "Add more beginner-friendly coding examples and guided exercises.",
+      "Expand the snippets library with algorithms and data structure examples.",
+      "Improve compiler error explanations and debugging assistance.",
+      "Add code formatting and more editor customization options.",
+      "Introduce coding challenges with test cases and expected outputs.",
+      "Explore additional programming language support.",
+    ],
+  },
 
   {
     slug: "news-orbit",
@@ -321,13 +317,7 @@ export const projects: Project[] ={
     description:
       "News Orbit is a news website focused on a clean reading experience, organized news sections, and a Bengali-friendly visual system. It aims to make browsing news straightforward across devices.",
 
-    stack: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "CSS",
-      "REST API",
-    ],
+    stack: ["Next.js", "React", "TypeScript", "CSS", "REST API"],
 
     image: "/images/news-orbit.webp",
 
@@ -374,8 +364,7 @@ export const projects: Project[] ={
 
     liveUrl: "https://medical-managment-seven.vercel.app/",
 
-    repoUrl:
-      "https://github.com/mdsolimansikder7/Medical-managment",
+    repoUrl: "https://github.com/mdsolimansikder7/Medical-managment",
 
     challenges: [
       "Organizing multiple hospital management modules into a consistent dashboard.",
@@ -391,108 +380,105 @@ export const projects: Project[] ={
       "Strengthen patient data security and access controls.",
       "Add automated tests and improve accessibility.",
     ],
-    
   },
+
   {
-  slug: "krishi-bondu",
-  name: "Krishi-Bondu",
-  category: "Agriculture Technology Platform",
-  featured: "Full-Stack Digital Agriculture Assistant",
+    slug: "krishi-bondu",
+    name: "Krishi-Bondu",
+    category: "Agriculture Technology Platform",
+    featured: "Full-Stack Digital Agriculture Assistant",
 
-  summary:
-    "A Bengali-first digital agriculture platform that helps farmers access weather updates, crop market prices, farming guides, AI-assisted disease analysis, and essential agricultural tools.",
+    summary:
+      "A Bengali-first digital agriculture platform that helps farmers access weather updates, crop market prices, farming guides, AI-assisted disease analysis, and essential agricultural tools.",
 
-  description:
-    "Krishi-Bondu is a full-stack digital agriculture platform designed to make farming information and tools more accessible to farmers in Bangladesh. Built with React, TypeScript, Vite, Node.js, Express, and MongoDB, the application brings together weather forecasts, crop market prices, cultivation guides, AI-assisted disease analysis, an agricultural calendar, farm expense tracking, a marketplace, and a farming Q&A system. It integrates Better Auth for authentication, Open-Meteo for weather data, and the Google Gemini API for optional AI-powered features. Its modular architecture separates frontend components, backend APIs, shared business logic, and authentication to support maintainability and deployment.",
+    description:
+      "Krishi-Bondu is a full-stack digital agriculture platform designed to make farming information and tools more accessible to farmers in Bangladesh. Built with React, TypeScript, Vite, Node.js, Express, and MongoDB, the application brings together weather forecasts, crop market prices, cultivation guides, AI-assisted disease analysis, an agricultural calendar, farm expense tracking, a marketplace, and a farming Q&A system. It integrates Better Auth for authentication, Open-Meteo for weather data, and the Google Gemini API for optional AI-powered features. Its modular architecture separates frontend components, backend APIs, shared business logic, and authentication to support maintainability and deployment.",
 
-  stack: [
-    "React 19",
-    "TypeScript",
-    "Vite",
-    "Tailwind CSS",
-    "Lucide React",
-    "Motion",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Better Auth",
-    "Google Gemini API",
-    "Open-Meteo API",
-    "Vercel",
-  ],
+    stack: [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Lucide React",
+      "Motion",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Better Auth",
+      "Google Gemini API",
+      "Open-Meteo API",
+      "Vercel",
+    ],
 
-  image: "/images/krishi-bondu.webp",
+    image: "/images/krishi-bondu.webp",
 
-  liveUrl: "https://krishi-bondu.vercel.app/",
+    liveUrl: "https://krishi-bondu.vercel.app/",
 
-  repoUrl:
-    "https://github.com/mdsolimansikder7/Krishi-Bondu",
+    repoUrl: "https://github.com/mdsolimansikder7/Krishi-Bondu",
 
-  challenges: [
-    "Integrating weather information, agricultural data, and AI-assisted features into a unified platform.",
-    "Designing a modular monorepo structure for the frontend, backend, and shared business logic.",
-    "Implementing authentication and coordinating secure communication between the frontend and backend APIs.",
-    "Building farmer-focused tools for market prices, crop guidance, farm management, and agricultural calculations.",
-    "Configuring Vercel deployment, API routing, environment variables, and database connectivity.",
-  ],
+    challenges: [
+      "Integrating weather information, agricultural data, and AI-assisted features into a unified platform.",
+      "Designing a modular monorepo structure for the frontend, backend, and shared business logic.",
+      "Implementing authentication and coordinating secure communication between the frontend and backend APIs.",
+      "Building farmer-focused tools for market prices, crop guidance, farm management, and agricultural calculations.",
+      "Configuring Vercel deployment, API routing, environment variables, and database connectivity.",
+    ],
 
-  improvements: [
-    "Integrate verified agricultural market data sources for more reliable and up-to-date crop prices.",
-    "Improve AI-assisted crop disease analysis with reliable agricultural datasets and expert-reviewed guidance.",
-    "Add advanced farm analytics, expense reports, and crop profitability calculations.",
-    "Expand the agricultural marketplace with secure transactions and improved seller management.",
-    "Strengthen automated testing, accessibility, API security, and application performance monitoring.",
-  ],
-},
-{
-  slug: "chatly",
-  name: "Chatly",
-  category: "Real-Time Messaging Platform",
-  featured: "Full-Stack Chat Application",
+    improvements: [
+      "Integrate verified agricultural market data sources for more reliable and up-to-date crop prices.",
+      "Improve AI-assisted crop disease analysis with reliable agricultural datasets and expert-reviewed guidance.",
+      "Add advanced farm analytics, expense reports, and crop profitability calculations.",
+      "Expand the agricultural marketplace with secure transactions and improved seller management.",
+      "Strengthen automated testing, accessibility, API security, and application performance monitoring.",
+    ],
+  },
 
-  summary:
-    "A modern messaging platform for real-time conversations, friend connections, and interactive communication.",
+  {
+    slug: "chatly",
+    name: "Chatly",
+    category: "Real-Time Messaging Platform",
+    featured: "Full-Stack Chat Application",
 
-  description:
-    "Chatly is a full-stack messaging application designed to provide a smooth and interactive communication experience. The frontend is built with React and Vite, while the backend uses Node.js, Express, and MongoDB. The application integrates Socket.IO for real-time messaging and communication events, Better Auth for authentication support, and REST APIs for application features. Its modular architecture separates the frontend, backend, authentication, conversations, messages, and user management.",
+    summary:
+      "A modern messaging platform for real-time conversations, friend connections, and interactive communication.",
 
-  stack: [
-    "React",
-    "Vite",
-    "React Router",
-    "Tailwind CSS",
-    "Axios",
-    "Socket.IO",
-    "Better Auth",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Mongoose",
-  ],
+    description:
+      "Chatly is a full-stack messaging application designed to provide a smooth and interactive communication experience. The frontend is built with React and Vite, while the backend uses Node.js, Express, and MongoDB. The application integrates Socket.IO for real-time messaging and communication events, Better Auth for authentication support, and REST APIs for application features. Its modular architecture separates the frontend, backend, authentication, conversations, messages, and user management.",
 
-  image: "/images/chatly.webp",
+    stack: [
+      "React",
+      "Vite",
+      "React Router",
+      "Tailwind CSS",
+      "Axios",
+      "Socket.IO",
+      "Better Auth",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+    ],
 
-  liveUrl: "https://chatly-message.vercel.app/",
+    image: "/images/chatly.webp",
 
-  repoUrl:
-    "https://github.com/mdsolimansikder7/Chatly-message",
+    liveUrl: "https://chatly-message.vercel.app/",
 
-  challenges: [
-    "Integrating real-time messaging with the frontend and backend.",
-    "Organizing authentication, users, conversations, and messages into modular components.",
-    "Managing client-server communication through REST APIs and Socket.IO.",
-    "Building a responsive and interactive messaging interface.",
-    "Configuring frontend and backend communication across deployed environments.",
-  ],
+    repoUrl: "https://github.com/mdsolimansikder7/Chatly-message",
 
-  improvements: [
-    "Improve message delivery reliability and reconnection handling.",
-    "Add message search, pagination, and advanced conversation management.",
-    "Strengthen authentication, authorization, and API security.",
-    "Improve deployment configuration for persistent real-time connections.",
-    "Add automated tests, accessibility improvements, and performance monitoring.",
-  ],
-},
+    challenges: [
+      "Integrating real-time messaging with the frontend and backend.",
+      "Organizing authentication, users, conversations, and messages into modular components.",
+      "Managing client-server communication through REST APIs and Socket.IO.",
+      "Building a responsive and interactive messaging interface.",
+      "Configuring frontend and backend communication across deployed environments.",
+    ],
 
-  
+    improvements: [
+      "Improve message delivery reliability and reconnection handling.",
+      "Add message search, pagination, and advanced conversation management.",
+      "Strengthen authentication, authorization, and API security.",
+      "Improve deployment configuration for persistent real-time connections.",
+      "Add automated tests, accessibility improvements, and performance monitoring.",
+    ],
+  },
 ];
