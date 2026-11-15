@@ -74,7 +74,59 @@ export type Project = {
 };
 
 
-export const projects: Project[] = [
+export const projects: Project[] ={
+  slug: "zayro-cloth",
+  name: "Zayro",
+  category: "E-commerce",
+  featured: "Full-Stack Web App",
+
+  summary:
+    "A modern, mobile-first online clothing store with powerful filters, sorting, wishlist, cart and dark mode, built with Next.js, Express.js and MongoDB.",
+
+  description:
+    "Zayro is a full-stack e-commerce platform for fashion shopping. Customers can browse products by category, filter by price, color, size and style, sort by popularity, newest or price, and view detailed product pages with image galleries, ratings and reviews. The app includes a wishlist, shopping cart, product search and light and dark themes. The frontend is built with Next.js and Tailwind CSS, while a Node.js and Express.js REST API with MongoDB powers products, categories and store data, and Cloudflare R2 stores product images. It is designed mobile-first, with a slide-in filters drawer, clean one-line breadcrumbs, equal-height product cards and branded 404 and error pages for a smooth experience on every screen size.",
+
+  stack: [
+    "Next.js",
+    "TypeScript",
+    "React",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "Cloudflare R2",
+    "REST API",
+    "Vercel",
+  ],
+
+  image: "/images/zayro-cloth.webp",
+
+  liveUrl: "https://zayro-cloth.vercel.app",
+
+  repoUrl: "https://github.com/mdsolimansikder7/zayro-cloth-client",
+
+  challenges: [
+    "Designing a mobile-friendly filters drawer for category, price, color, size and style.",
+    "Keeping product cards, prices and discount badges aligned across different screen sizes.",
+    "Building a reusable breadcrumb that stays on one line, even with long product names.",
+    "Building a REST API with Express.js and MongoDB for products, filters and sorting.",
+    "Connecting the frontend to the API through a proxy to avoid cross-domain cookie issues.",
+    "Deploying the Express.js API and Next.js frontend as separate Vercel projects.",
+    "Supporting light and dark mode consistently across every page.",
+  ],
+
+  improvements: [
+    "Add secure online payment and checkout integration.",
+    "Add order tracking and order history for customers.",
+    "Improve search with suggestions and typo tolerance.",
+    "Add API caching and rate limiting for better performance and security.",
+    "Add product recommendations and recently viewed items.",
+    "Add multi-language and multi-currency support.",
+  ],
+},
+ [
   {
   slug: "git-folder-manager",
   name: "Git Folder Manager",
