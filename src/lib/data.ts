@@ -126,8 +126,9 @@ export const projects: Project[] ={
     "Add multi-language and multi-currency support.",
   ]
 },
- [
+
   {
+    [
   slug: "git-folder-manager",
   name: "Git Folder Manager",
   category: "Developer Tool",
