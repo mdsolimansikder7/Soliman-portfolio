@@ -124,7 +124,7 @@ export const projects: Project[] ={
     "Add API caching and rate limiting for better performance and security.",
     "Add product recommendations and recently viewed items.",
     "Add multi-language and multi-currency support.",
-  ],
+  ]
 },
  [
   {
