@@ -606,4 +606,4 @@ export const projects: Project[] = [
       "Add automated tests, accessibility improvements, and performance monitoring.",
     ],
   },
-];
+]
