@@ -70,6 +70,7 @@ export type Project = {
   repoUrl: string;
   challenges: string[];
   improvements: string[];
+  implementedFeatures?: string[];
   featured: string;
 };
 
@@ -125,8 +126,9 @@ export const projects: Project[] = [
       "Add product recommendations and recently viewed items.",
       "Add multi-language and multi-currency support.",
     ],
-  },[
-{
+  },
+
+  {
   slug: "hireloop",
   name: "HireLoop",
   category: "Job Portal",
