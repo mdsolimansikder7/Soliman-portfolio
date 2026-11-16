@@ -5,7 +5,7 @@ import Providers from "@/components/portfolio/Providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  title: "Md. Soliman Sikder | Full Stack Developer",
+  title: "Md. Soliman Sikder",
   description:
     "Portfolio of Md. Soliman Sikder — full stack developer building thoughtful digital experiences.",
   applicationName: "Soliman Portfolio",

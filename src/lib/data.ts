@@ -125,7 +125,82 @@ export const projects: Project[] = [
       "Add product recommendations and recently viewed items.",
       "Add multi-language and multi-currency support.",
     ],
-  },
+  },[
+{
+  slug: "hireloop",
+  name: "HireLoop",
+  category: "Job Portal",
+  featured: "Full-Stack Web App",
+
+  summary:
+    "A modern, full-stack job portal connecting job seekers with recruiters through advanced job discovery, application tracking, recruiter dashboards and career management tools.",
+
+  description:
+    "HireLoop is a full-stack recruitment platform designed to simplify the hiring process for both job seekers and recruiters. Job seekers can explore job opportunities, search and filter listings, save favorite jobs, apply for positions, manage applications and track their application status. The platform also includes profile management, resume-building features, career resources and salary insights. Recruiters can create and manage job listings, review candidate applications, monitor recruitment analytics and update application statuses through a dedicated dashboard. The platform features role-based access for job seekers, recruiters and administrators, secure authentication through email/password, Google and LinkedIn login, and Stripe-powered subscription and billing functionality. Built with Next.js, TypeScript and MongoDB, HireLoop delivers a responsive and streamlined recruitment experience.",
+
+  stack: [
+    "Next.js 16",
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS 4",
+    "shadcn/ui",
+    "Base UI",
+    "Lucide React",
+    "Node.js",
+    "MongoDB",
+    "Better Auth",
+    "Stripe",
+    "Zod",
+    "REST API",
+    "Vercel",
+  ],
+
+  image: "/images/hireloop.webp",
+
+  liveUrl: "https://hireloop-chi-seven.vercel.app",
+
+  repoUrl: "https://github.com/mdsolimansikder7/hireloop",
+
+  implementedFeatures: [
+    "Role-based authentication and access control for job seekers, recruiters and administrators.",
+    "Google and LinkedIn social login alongside email and password authentication.",
+    "Dedicated dashboards and navigation systems for different user roles.",
+    "Job creation, editing and management with detailed job specifications and salary information.",
+    "Complete job application workflow with multiple recruitment statuses.",
+    "Recruiter dashboard for managing applicants, candidate information and recruitment statistics.",
+    "Advanced job search with multiple filters and intelligent search suggestions.",
+    "Comprehensive recruitment analytics and reporting dashboards.",
+    "Stripe-powered payment options and subscription management.",
+    "Secure session management and protected routes using Better Auth and Next.js proxy.",
+    "MongoDB data management across users, jobs, applications, interviews and offers.",
+    "Responsive user interfaces across different dashboard layouts.",
+  ],
+
+  challenges: [
+    "Implementing role-based authentication and access control across multiple user types.",
+    "Integrating Google and LinkedIn social authentication with email and password login.",
+    "Building separate dashboard experiences and navigation systems for different roles.",
+    "Developing a flexible job posting and management system.",
+    "Managing complex job application workflows and recruitment statuses.",
+    "Creating advanced job search, filtering and intelligent search suggestions.",
+    "Building comprehensive recruitment analytics and reporting functionality.",
+    "Integrating Stripe payments and managing subscription states.",
+    "Implementing secure session handling and protected routes.",
+    "Managing interconnected MongoDB collections for users, jobs, applications, interviews and offers.",
+    "Maintaining responsive and consistent UI across the entire platform.",
+  ],
+
+  improvements: [
+    "Implement AI-powered job recommendations based on candidate skills and experience.",
+    "Add advanced resume parsing and automatic candidate-job matching.",
+    "Integrate email and push notifications for application status updates.",
+    "Add real-time messaging between recruiters and job seekers.",
+    "Integrate video interview platforms and automated scheduling.",
+    "Expand multi-language support for a wider audience.",
+  ],
+},
+
+
     {
     slug: "humanova",
     name: "Humanova",
